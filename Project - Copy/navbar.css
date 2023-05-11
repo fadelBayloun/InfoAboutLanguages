@@ -1,0 +1,198 @@
+
+* {
+    box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+.ff-Sofia {
+    font-family: "Sofia", sans-serif !important;
+}
+
+.nav-bar {
+    background-color: #299ca8;
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  header {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 1.1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    user-select: none;
+    margin:0 6% 1% 6%;
+  }
+  .pre-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto ;
+    cursor: default;
+    height: fit-content;
+    align-items: center;
+  }
+  
+  ul {
+    margin-top: 0;
+    padding-inline-start: 0; /*for the padding at start of the lists*/
+  } 
+  
+  
+  li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  .nav-item{
+    margin: 0 2px;
+  }
+  .nav-link {
+    border-radius: 0.55rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  }
+  .nav-link-active{
+    background-color: #222f5c ;
+    color: #fff;
+  }
+  .nav-link-active:hover{
+    background-color: #1e2640;
+  }
+  
+  .nav-active {
+    color: #fff;
+    background-color: #222f5c;
+  }
+  
+  .fa-caret-right{
+    margin-left: 1em;
+    padding: 0px;
+    pointer-events: none;
+    transition: 0.15s;
+  }
+   
+  .Courses-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    list-style: none;
+    background-color: #299ca8;
+    width: 160px;
+  }
+  .Courses-content a{
+    display: block;
+    color: black;
+    text-decoration: none;
+  }
+  .dropdown-item:not(:last-child) {
+    padding-bottom: 5px;
+    padding-left: 4px;
+  }
+  .dropdown-item:hover {
+    background-color: #1d838f;
+    color: white;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out
+      border-color 0.15s ease-in-out;
+  }
+   
+  
+  #dark-mode-btn {
+    font-size: 17px;
+    border: 1px solid #000d0d;
+    border-radius: 3em;
+    padding: 0.35rem 0.7rem;
+    cursor: pointer;
+  }
+  #dark-mode-btn:hover {
+    background-color: rgb(44, 134, 160);
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  }
+  
+  
+  
+  
+  @media screen and (max-width:620px) {
+    .nav-bar{
+      position: relative;
+    }
+    header,.nav{
+      flex-direction: column;
+    }
+    .pre-container{
+      margin: auto;
+      padding-bottom: 1em;
+      flex-direction: column;
+    }
+    .nav-link,#dark-mode-btn{
+      margin-top: 1%;
+    }
+    #dark-mode-btn{
+      margin-top: 6%;
+    }
+    .Courses-content{
+      position: relative;
+      left: 0!important;
+      top: 0!important;
+      box-shadow: none;
+      text-align: center;
+      border: 4px solid #000d0d;
+    }
+    
+  }
+  /*********************************************************************************** DARK MODE***********************************************************************************/
+  
+  .dark-mode .nav-link,
+  .dark-mode .pre-container {
+    color: #00f159;
+  }
+  .dark-mode .nav-bar {
+    background-color: #004012;
+  }
+  .dark-mode #dark-mode-btn:hover{
+    background-color: #033310;
+  }
+  .dark-mode #dark-mode-btn {
+    border-color: #fff;
+    color: #fff;
+    
+  }
+  
+  .dark-mode .dropdown-item {
+    background-color: #003012;
+    color: #00f159;
+  }
+  .dark-mode .dropdown-item:hover {
+    background-color: #01240e;
+    color: #eee;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out;
+  }
+  .dark-mode .nav-link:hover {
+    background-color: #003012;
+    color: #eee;
+  }
+  
+  .dark-mode .nav-link-active{
+    background-color: #003012 ;
+    color: #fff;
+  }
+  .dark-mode .nav-link-active:hover{
+    background-color: #01240e;
+  }
+    
+  

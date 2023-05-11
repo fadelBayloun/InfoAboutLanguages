@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en"> 
+    <title>Code Chasers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FontAwesom/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"><!--for font family sofia-->
+    
+    <link rel="icon" href ="title.png">
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    
+
+    <div class="nav-bar" id="GoingTop"> 
+        <header >
+            <div class="pre-container">
+                <img src="title.png" width="50px" height="50px" draggable="false">
+                <span class="ff-Sofia" style="margin-left: 10px;">Code Chasers</span>
+            </div>
+            <ul class="nav ">
+                <li class="nav-item"><a  class="nav-link nav-link-active ">Home</a></li>
+                <li class="nav-item link-toggle"><a class="nav-link Courses-toggle">Courses<i class="fas fa-caret-right "></i></a></li>
+                <div class="Courses-content ">
+                    <a href="Courses/Python.html" class="dropdown-item">Python</a>
+                    <a href="Courses/Java.html" class="dropdown-item">Java</a>
+                    <a href="Courses/javascript.html" class="dropdown-item">javascript</a>
+                    <a href="Courses/C_Cpp.html" class="dropdown-item">C/C++</a>
+                    <a href="Courses/PHP.html" class="dropdown-item">PHP</a>
+                    <a href="Courses/CSharp.html" class="dropdown-item">C#</a>
+                </div>
+                <li class="nav-item"><a href="AboutUs.html" class="nav-link ">About us</a></li>
+                
+                
+                <li class="nav-item">
+                    <!--<button id="dark-mode-btn" onclick="TextToggleFunction()">Toggle dark mode</button>-->
+                    <i class="fas fa-moon" id="dark-mode-btn"></i>
+                    <!--<i class="far fa-moon"></i>-->
+                </li>
+            </ul>
+        </header>
+    </div>
+    <div class="arrow_GoingTop_container">
+        <a href="#GoingTop"></a>
+    </div>
+    <div class="carousel">
+        <button class="carousel__button  carousel__button--left">
+            <i class="fas fa-2x fa-chevron-left"></i>
+        </button>
+
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide active" style="background-image: url(carousel/1.jpg)"></li>
+                <li class="carousel__slide" style="background-image: url(carousel/2.jpg)"></li>
+                <li class="carousel__slide" style="background-image: url(carousel/3.jpg)"></li>
+                <li class="carousel__slide" style="background-image: url(carousel/4.jpg)"></li>
+                <li class="carousel__slide" style="background-image: url(carousel/5.jpg)"></li>
+                <li class="carousel__slide" style="background-image: url(carousel/6.jpg)"></li>
+            </ul>
+        </div>
+
+        <button class="carousel__button carousel__button--right">
+            <i class="fas fa-2x fa-chevron-right"></i>
+        </button>
+        <div class="carousel__nav">
+            <button class="carousel__indicator active"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+        </div>
+    </div>
+    
+    <main>
+        <div class="introduction">
+            <div class="row">
+                <div class=" text">
+                    <h1> Computer Science: </h1>
+                    <p>
+                        In other words, computer science is the study of theoretical foundations of information 
+                        and calculations,and their implementation and application with computers.
+                    </p>
+
+                    <h1> Programming: </h1>
+                    <p>
+                        The main purpose of prorgramming is  to find a sequence of instructions that will 
+                        automate the performance of a task (which can be as complex as an operating system) 
+                        on a computer, often for solving a given problem.<br>
+                        & so we conclude in order to use programming in computer science we must use tools , 
+                        and these tools are characterized in languages .<br>
+                        And we will discuss more about the languages in order to know more about this field.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+                <div class="column_two_items">
+                    <div class="column-item">
+                        <div class="Course-head Python"><p>Python</p></div>
+                        <div class="mjfcontent">
+                            The future of programming :<br>
+                            <b>Python</b> it is a clean and powerful programming language.<br><br>
+                        <a class="btn-to-course" href="Courses/Python.html">Course</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column_two_items">
+                    <div class="column-item" >
+                        <div class="Course-head Java" ><p >Java</p></div>
+                        <div class="mjfcontent">
+                            The Most Powerful Object-Oriented Programming Language<br>
+                            <b>Java</b> made way easy for everyone.<br><br>
+                        <a  class="btn-to-course" href="Courses/Java.html">Course</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column_two_items">
+                    <div class="column-item" >
+                        <div class="Course-head JS"><p >javascript</p></div>
+                        <div class="mjfcontent">
+                            The <b>onecross-platform</b> scriptable access to databases, 
+                            The majority of websites also usefull and easy technique.<br><br>
+                        <a  class="btn-to-course" href="Courses/JavaScript.html">Course</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column_two_items">
+                    <div class="column-item">
+                        <div class="Course-head C_Cpp" ><p >C/C++</p></div>
+                        <div class="mjfcontent">
+                            <b>The basis</b> of all other programming languages tops The uniqueness of all its brothers, learn it quickly.<br><br>
+                        <a  class="btn-to-course" href="Courses/C_Cpp.html">Course</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column_two_items">
+                    <div class="column-item" >
+                        <div class="Course-head PHP"><p >PHP</p></div>
+                        <div class="mjfcontent">
+                            An open source general-purpose scripting. 
+                            Developers have praised <b>PHP</b> for its ease.<br><br>
+                        <a  class="btn-to-course" href="Courses/PHP.html">Course</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column_two_items">
+                    <div class="column-item" >
+                        <div class="Course-head CSharp"><p >C#</p></div>
+                        <div class="mjfcontent">
+                            Favored by millions for its <b>versatility</b> and easy-to-read syntax, so why C# ! hurry try it.<br><br>
+                        <a  class="btn-to-course" href="Courses/CSharp.html">Course</a>
+                        </div>
+                    </div>
+                </div>
+            
+        </div> <!--  Closing Items -->
+            
+        </div>
+
+    </main>
+    
+
+    
+
+    <footer class="MJFfooter">
+        
+        <div class="footer_column_wrap border-aqua" >
+            
+            <div class="attract" style = "text-transform:capitalize;">
+                Select and hire the perfect designer from our Team
+            </div>
+            <div class="candidates">
+                We are talented creative candidate  searching for companies looking for designers.
+            </div>
+            
+        </div>
+        <div class="footer_column_wrap">
+            <div class="word">Think<sup><span class="square">2</span></sup></div>
+            <div class="quote">
+                Chase every <span>Code</span> every<span>where</span> for every<span>thing</span>
+            </div>
+        </div>
+        
+        <div class="footer_column_wrap flex_row">
+            <p style="background-color: transparent;"><b>Find us on :</b></p>
+            <a href="https://www.facebook.com/Mustafa.Muhammad.257" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/_mustafa257?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/Mustafa98372018?t=n0UasjNWQ-tVygGbNQicaA&s=08" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=96171990618&text=hey!" target="_blank"> <i class="fab fa-whatsapp"></i></a>
+            <a href="https://msng.link/o/?MJawad=tg" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+        </div>
+        <div class="footer_column_wrap">
+            Done By Mohammad Jawad Fneish <br>
+            With The Help of Hussein Noureidden <a class="fneishm" href="mailto:fneishm123@gmail.com">fneishm123@gmail.com</a>
+        </div>
+    </footer>
+    
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
+</html>
